@@ -1,0 +1,3 @@
+echo Compilando ...
+javac -cp bin -d bin src/texto/Frase.java
+javac -cp bin -d bin src/texto/Main.java

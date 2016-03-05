@@ -4,6 +4,8 @@ public class Vetor {
     mostraMaior(new int[]{837284,823498,12093});
     mostraMaior(new int[]{89});
     mostraMaior(new int[]{});
+    String s = "";
+
 
     int[] lista1 = {65, 60, 80, 10}; // maior1 = 80
     int[] lista2 = {12, 17, 20, 5};  // maior2 = 20
