@@ -1,15 +1,14 @@
 package ooproblem1;
 
-public class Livro {
+public class Livro extends Produto {
 	
 	private String titulo;
 	private String autor;
-	private int peso;
 	
 	public Livro(String titulo, String autor, int peso) {
+		super(peso);
 		this.titulo = titulo;
 		this.autor = autor;
-		this.peso = peso;
 	}
 
 	public String getTitulo() {
@@ -28,17 +27,14 @@ public class Livro {
 		this.autor = autor;
 	}
 
-	public int getPeso() {
-		return peso;
-	}
-
-	public void setPeso(int peso) {
-		this.peso = peso;
+	@Override
+	public String toString() {
+		return "Livro [titulo=" + titulo + ", autor=" + autor + "]";
 	}
 
 	@Override
-	public String toString() {
-		return "Livro [titulo=" + titulo + ", autor=" + autor + ", peso=" + peso + "]";
+	public String getDescricao() {
+		return "Livro " + this.titulo;
 	}
 	
 	
