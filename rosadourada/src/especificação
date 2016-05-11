@@ -1,0 +1,50 @@
+Especificações dos Requisitos do Rosa Dourada
+=============================================
+
+Olá e bem-vindo à equipe do Rosa Dourada. 
+
+Como você sabe, nós somos uma pequena pousada em um local privilegiado numa
+cidade proeminente e administrada por um simpático hoteleiro chamado Allison.
+
+Nós também compramos e vendemos somentes as mais finas iguarias. Infelizmente,
+nossas mercadorias estão constantemente degradando sua qualidade a medida
+que se aproxima o seu prazo de validade.
+
+Nós temos um sistema instalado que atualiza nosso inventário. Ele foi
+desenvolvido por um cara atinado chamado Leeroy, que se mudou procurando
+novas aventuras. Sua tarefa é adicionar novas funcionalidades ao nosso sistema
+de forma que a gente possa vender uma nova categoria de itens.
+
+Primeiro, deixe-me apresentar nosso sistema:
+- Todos os itens tem um valor chamado "venderEm" que denota o número de dias
+  remanescente que temos para vender o item.
+- Todos os itens tem um valor chamado "quantidade" que denora o quão valioso
+  é o item.
+- No fim de cada dia nosso sistema rebaixa ambos valores para cada item.
+
+Muito simples, certo? Bem, é aqui que as coisas ficam interessantes:
+- Passados o prazo venda a Qualidade degrada duas vezes mais rápido;
+- A qualidade de um item nunca pode ser negativa;
+- "Brie Envelhecido", na verdade, deve aumentar a Qualidade a medida que envelhece;
+- A Qualidade de um item nunca pode ser maior que 50;
+- "Sulfuras", sendo um produto lendário, nunca precisa ser vendido ou decresce Qualidade
+- "Entradas para o Backstage", assim como o "Brie Envelhecido", aumenta de Qualidade
+  a medida que o prazo para venda se aproxima; a Qualidade aumenta de 2 em 2
+  quando há 10 dias ou menos, e de 3 em 3 quando há 5 dias ou menos, mas a 
+  Qualidade cai para zero após o concerto.
+  
+Nós recentemente assinamos contrato com um fornecedor de produtos Conjurados.
+Isso faz necessária uma atualização no nosso sistema:
+- Items Conjurados degradam a Qualidade duas vezes mais rápido que os outros itens;
+
+Sinta-se a vontade para fazer qualquer alteração ao método atualizaQualidade e 
+também para adicionar qualquer código novo desde que tudo funcione corretamente.
+Contudo, não altere a classe Item e o atributo itens, pois pertencem àquele
+Ogro ali no canto que vai ter um ataque de ódio pois ele não acredita em
+propriedade compartilhada de código. 
+
+Só para esclarecer, um item nunca pode ter sua Qualidade incrementada acima de
+50, contudo, "Sulfuras" é um item lendário e assim sua Qualidade é 80 e nunca
+é alterada.
+
+
